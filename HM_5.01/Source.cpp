@@ -31,7 +31,7 @@ static int partition(T arr[], int idx_start, int idx_end,int size_arr)
 	}
 	return idx_pivot;
 }
-
+// using template function
 template <typename T>
 void quickSort(T arr[], int idx_start, int idx_end, int size_arr)
 {
@@ -47,7 +47,7 @@ void quickSort(T arr[], int idx_start, int idx_end, int size_arr)
 
 int main()
 {
-	int arr[] = { 1,9,7,4,11 };
+	int arr[] = { 1,9,7,4,11 }; //create Integer array
 	int size_arr = sizeof(arr) / sizeof(arr[0]);
 	std::cout << "size_arr = " << size_arr << std::endl;
 
@@ -57,7 +57,7 @@ int main()
 		std::cout << arr[i] << " ";
 	std::cout << std::endl;
 
-	double arr2[] = { 9.5, 1.5, 7.5, 4.5, 3.6,8.8};
+	double arr2[] = { 9.5, 1.5, 7.5, 4.5, 3.6,8.8}; //create double array
 	int size_arr2 = sizeof(arr2) / sizeof(arr2[0]);
 	quickSort(arr2, 0, size_arr2 - 1, size_arr2);
 
